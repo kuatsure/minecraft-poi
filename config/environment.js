@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'minecraft-poi',
+    podModulePrefix: 'minecraft-poi/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

@@ -5,7 +5,14 @@ module.exports = function(environment) {
     modulePrefix: 'minecraft-poi',
     podModulePrefix: 'minecraft-poi/pods',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com",
+      'img-src': "'self' data:",
+      'media-src': "'self'"
+    },
     firebase: 'https://minecraft-poi.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',

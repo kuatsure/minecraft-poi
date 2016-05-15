@@ -5,6 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'minecraft-poi',
     podModulePrefix: 'minecraft-poi/pods',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://minecraft-poi.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

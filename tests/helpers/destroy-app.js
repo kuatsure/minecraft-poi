@@ -1,4 +1,4 @@
-/*eslint 'space-in-parens': 'off'*/
+/* eslint-disable */
 
 import Ember from 'ember';
 

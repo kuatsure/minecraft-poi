@@ -1,6 +1,3 @@
-/*eslint 'space-in-parens': 'off'*/
-/*eslint 'prefer-rest-params': 'off'*/
-
 import { module } from 'qunit';
 import startApp from '../helpers/start-app';
 import destroyApp from '../helpers/destroy-app';

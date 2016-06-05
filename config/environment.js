@@ -14,6 +14,10 @@ module.exports = function(environment) {
       'media-src': "'self'"
     },
     firebase: 'https://minecraft-poi.firebaseio.com/',
+    pageTitle: {
+      separator: ' :: ',
+      prepend: true
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

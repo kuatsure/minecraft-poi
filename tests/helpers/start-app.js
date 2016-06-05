@@ -1,3 +1,6 @@
+/*eslint 'space-in-parens': 'off'*/
+/*eslint 'newline-after-var': 'off'*/
+
 import Ember from 'ember';
 import Application from '../../app';
 import config from '../../config/environment';

@@ -1,3 +1,6 @@
+/*eslint 'space-in-parens': 'off'*/
+/*eslint 'prefer-const': 'off'*/
+
 import Ember from 'ember';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';

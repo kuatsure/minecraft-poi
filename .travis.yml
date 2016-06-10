@@ -1,7 +1,7 @@
----
 language: node_js
+
 node_js:
-  - "4"
+  - '4'
 
 sudo: false
 
@@ -32,3 +32,9 @@ install:
 
 script:
   - ember try $EMBER_TRY_SCENARIO test
+
+notifications:
+  email: false
+  slack:
+    secure:
+      - CzdAUf8PI8d53/oMObh4o+FZEt1mAcQNLwKtLbb6YHPJd7g7ZKJMqzlj4OziZNhS3VoRt9J1sSpM3uonx+XC8SxG5rezIn6AhFiOfROmwjn3x9N5WkYg1ORTd9+EViDeqq4OjwOPGsMSyCDkd7XKhecW5T7IVoFExq7zSXkU1rCN+HWh89U65cqXZ/DuTQFgZv4l/7j0MgrkzR1WIrlbsbOnmDtvkLPnGosSKO+s40hs74dO7zUh8z1n76g73Kt2kLxo3pLwbDjhsi96r5SlrxzciKjdMuWTyIPjcLySUyEIHhFf9n05vcxSCSI02S4QOXRVYo+AcSsQw05o/qOWEKI+wL61BNPVX9JwyjLiWNr0RkF96AbeAGt01zc0taocQc8kIhyQoUyqzWsXCQr8ymU03qb83dAB5TETyRY7/O6iBXlEN8mOq5X1hYXENfcGNDCIb4iNPitDJspgHbflXcFeQ3wcLbeKFm9WzYWLMm/HVTOvUKCqECUDxn31kgz+G5D56H5HQksH2U7oUKRcXaO4w70vjJfZQ/QrZnurPjIX99zyjGoYp8YqPvGotzCHUk8gNdrFCDuvdaLxDW/7l0W7hsW5yYI9Kv0R2AQJCqMuCrIR3VIdOblBPoHXTa6Hrw9OH5tllkS67k8pFdC2GDWjfBVBaRPvYGP11uIuMf0=

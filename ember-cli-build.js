@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
@@ -5,7 +7,8 @@ module.exports = function(defaults) {
     sassOptions: {
       includePaths: [
         'bower_components'
-      ]
+      ],
+      sourceMapEmbed: true
     }
   });
 

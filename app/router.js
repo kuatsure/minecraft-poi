@@ -1,6 +1,5 @@
 /*eslint 'space-in-parens': 'off'*/
 /*eslint 'array-callback-return': 'off'*/
-/*eslint 'no-empty-function': 'off'*/
 
 import Ember from 'ember';
 import config from './config/environment';
@@ -10,6 +9,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('worlds', function() {
+    this.route('new');
+  });
 });
 
 export default Router;

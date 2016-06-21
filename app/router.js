@@ -12,7 +12,7 @@ Router.map(function() {
   this.route('worlds', function() {
     this.route('new');
   });
-  this.route('world', function() {
+  this.route('world', { path: 'world/:world_id' }, function() {
     this.route('edit');
   });
 });

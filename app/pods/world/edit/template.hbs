@@ -1,1 +1,33 @@
+{{title 'Edit ' model.name}}
+
+<h2 style="display: flex; flex-direction: row; align-items: center;">
+  {{model.name}}
+</h2>
+
+<form {{action "submitEditWorld" model on="submit"}}>
+  {{paper-input label="Name" required=true value=editName}}
+
+  <div style="display: flex; flex-direction: row; align-items: center;">
+    {{#paper-button raised=true type="button" action="destroyWorld" warn=true}}
+      {{paper-icon "delete"}}
+
+      Delete World
+    {{/paper-button}}
+
+    <span class="u-flex"></span>
+
+    {{#paper-button raised=true type="button" action="cancelEditWorld"}}
+      {{paper-icon "cancel"}}
+
+      Cancel
+    {{/paper-button}}
+
+    {{#paper-button raised=true primary=true type="submit"}}
+      {{paper-icon "save"}}
+
+      Save New World
+    {{/paper-button}}
+  </div>
+</form>
+
 {{outlet}}

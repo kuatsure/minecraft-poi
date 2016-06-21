@@ -1,1 +1,17 @@
+{{title model.name}}
+
+<h2 style="display: flex; flex-direction: row; align-items: center;">
+  {{model.name}}
+
+  <span class="u-flex"></span>
+
+  {{#link-to "world.edit" model tagName="button" classNames="md-default-theme md-button"}}
+    <span disabled="false">
+      {{paper-icon "edit"}}
+
+      Edit
+    </span>
+  {{/link-to}}
+</h2>
+
 {{outlet}}

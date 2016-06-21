@@ -1,1 +1,29 @@
+{{title 'New World'}}
+
+<h2 style="display: flex; flex-direction: row; align-items: center;">
+  New World
+
+  <span class="u-flex"></span>
+</h2>
+
+<form {{action "submitNewWorld" on="submit"}}>
+  {{paper-input label="Name" required=true value=name}}
+
+  <div style="display: flex; flex-direction: row; align-items: center;">
+    <span class="u-flex"></span>
+
+    {{#paper-button raised=true action="cancelNewWorld"}}
+      {{paper-icon "cancel"}}
+
+      Cancel
+    {{/paper-button}}
+
+    {{#paper-button raised=true primary=true type="submit"}}
+      {{paper-icon "save"}}
+
+      Save New World
+    {{/paper-button}}
+  </div>
+</form>
+
 {{outlet}}

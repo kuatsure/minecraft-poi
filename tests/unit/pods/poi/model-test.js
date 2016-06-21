@@ -1,8 +1,8 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('world', 'Unit | Model | world', {
+moduleForModel('poi', 'Unit | Model | poi', {
   // Specify the other units that are required for this test.
-  needs: ['model:poi']
+  needs: ['model:world']
 });
 
 test('it exists', function(assert) {

@@ -1,0 +1,43 @@
+{{title 'Edit ' model.name}}
+
+<h2 style="display: flex; flex-direction: row; align-items: center;">
+  Edit {{model.name}}
+
+  <span class="u-flex"></span>
+</h2>
+
+<form {{action "submitEditPoi" on="submit"}}>
+  {{paper-input label="Name" required=true value=model.name}}
+
+  <div layout="row">
+    <div flex>{{paper-input label="X Coordinate" type="number" required=true value=model.xCoord}}</div>
+
+    <div flex>{{paper-input label="Y Coordinate" type="number" required=true value=model.yCoord}}</div>
+
+    <div flex>{{paper-input label="Z Coordinate" type="number" required=true value=model.zCoord}}</div>
+  </div>
+
+  <div style="display: flex; flex-direction: row; align-items: center;">
+    {{#paper-button raised=true type="button" action="destroyPoi" warn=true}}
+      {{paper-icon "delete"}}
+
+      Delete POI
+    {{/paper-button}}
+
+    <span class="u-flex"></span>
+
+    {{#paper-button raised=true action="cancelEditPoi"}}
+      {{paper-icon "cancel"}}
+
+      Cancel
+    {{/paper-button}}
+
+    {{#paper-button raised=true primary=true type="submit"}}
+      {{paper-icon "save"}}
+
+      Save POI
+    {{/paper-button}}
+  </div>
+</form>
+
+{{outlet}}

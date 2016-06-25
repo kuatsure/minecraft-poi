@@ -1,0 +1,33 @@
+{{title model.name}}
+
+<h2 style="display: flex; flex-direction: row; align-items: center;">
+  {{model.name}}
+
+  <span class="u-flex"></span>
+
+  {{#link-to "world.pois" model.world tagName="button" classNames="md-default-theme md-button"}}
+    <span disabled="false">
+      {{paper-icon "chevron-left"}}
+
+      Back to world
+    </span>
+  {{/link-to}}
+
+  {{#link-to "world.poi.edit" model tagName="button" classNames="md-default-theme md-button"}}
+    <span disabled="false">
+      {{paper-icon "edit"}}
+
+      Edit POI
+    </span>
+  {{/link-to}}
+</h2>
+
+<div layout="row">
+  <div flex>X Coordinate: {{model.xCoord}}</div>
+
+  <div flex>Y Coordinate: {{model.yCoord}}</div>
+
+  <div flex>Z Coordinate: {{model.zCoord}}</div>
+</div>
+
+{{outlet}}

@@ -17,6 +17,9 @@ Router.map(function() {
     this.route('pois', function() {
       this.route('new');
     });
+    this.route('poi', { path: 'poi/:poi_id' }, function() {
+      this.route('edit');
+    });
   });
 });
 

@@ -14,6 +14,9 @@ Router.map(function() {
   });
   this.route('world', { path: 'world/:world_id' }, function() {
     this.route('edit');
+    this.route('pois', function() {
+      this.route('new');
+    });
   });
 });
 

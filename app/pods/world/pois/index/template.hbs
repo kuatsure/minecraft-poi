@@ -1,0 +1,30 @@
+{{title "POIS"}}
+
+{{#paper-content class="md-whiteframe-z2"}}
+  {{#paper-list}}
+    {{#each model as |poi_item|}}
+      {{#link-to "world.pois"}}
+        {{#paper-item class="md-3-line"}}
+          <div class="md-list-item-text">
+            <h3>
+              {{poi_item.name}}
+            </h3>
+          </div>
+        {{/paper-item}}
+      {{/link-to}}
+
+      {{paper-divider}}
+
+    {{else}}
+      {{#paper-item}}
+        No POIS! :(&nbsp;
+
+        {{#link-to "world.pois.new"}}
+          Why don't you create one?
+        {{/link-to}}
+      {{/paper-item}}
+    {{/each}}
+  {{/paper-list}}
+{{/paper-content}}
+
+{{outlet}}

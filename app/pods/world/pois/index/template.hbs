@@ -1,5 +1,27 @@
 {{title "POIS"}}
 
+<h2 style="display: flex; flex-direction: row; align-items: center;">
+  {{world.name}}
+
+  <span class="u-flex"></span>
+
+  {{#link-to "world.edit" world tagName="button" classNames="md-default-theme md-button"}}
+    <span disabled="false">
+      {{paper-icon "edit"}}
+
+      Edit World
+    </span>
+  {{/link-to}}
+
+  {{#link-to "world.pois.new" world tagName="button" classNames="md-default-theme md-button md-raised md-accent"}}
+    <span disabled="false">
+      {{paper-icon "add-box"}}
+
+      Add a POI
+    </span>
+  {{/link-to}}
+</h2>
+
 {{#paper-content class="md-whiteframe-z2"}}
   {{#paper-list}}
     {{#each model as |poi_item|}}

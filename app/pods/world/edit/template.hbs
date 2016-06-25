@@ -1,9 +1,5 @@
 {{title 'Edit ' model.name}}
 
-<h2 style="display: flex; flex-direction: row; align-items: center;">
-  {{model.name}}
-</h2>
-
 <form {{action "submitEditWorld" model on="submit"}}>
   {{paper-input label="Name" required=true value=editName}}
 

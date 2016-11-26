@@ -23,6 +23,8 @@ module.exports = {
     'no-eq-null': 'error',
     'no-lone-blocks': 'error',
     'no-useless-concat': 'error',
+    'no-multi-spaces': 'error',
+    'no-lonely-if': 'error',
     'radix': [ 'error', 'as-needed' ],
     'wrap-iife': [ 'error', 'outside' ],
     'no-useless-concat': 'error',
@@ -37,6 +39,7 @@ module.exports = {
     'key-spacing': 'error',
     'lines-around-comment': 'error',
     'newline-after-var': 'error',
+    'no-extra-parens': 'error',
 
     // NOTE: ES2015 specific rules
     'no-duplicate-imports': 'error',
@@ -47,6 +50,7 @@ module.exports = {
     'template-curly-spacing': [ 'error', 'always' ],
     'object-shorthand': 'error',
     'prefer-const': 'error',
+    'no-const-assign': 'error',
     'arrow-body-style': [ 'error', 'always' ],
     'prefer-rest-params': 'error',
   }

@@ -7,7 +7,7 @@ sudo: false
 
 cache:
   directories:
-    - node_modules
+    - $HOME/.cache/yarn
 
 env:
   - EMBER_TRY_SCENARIO=default
@@ -22,13 +22,12 @@ matrix:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
 before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - yarn add bower phantomjs-prebuilt
 
 install:
-  - npm install
-  - bower install
+  - yarn
 
 script:
   - ember try:one $EMBER_TRY_SCENARIO test

@@ -8,6 +8,7 @@
     "test": "tests"
   },
   "scripts": {
+    "postinstall": "bower install",
     "build": "ember build",
     "start": "ember server",
     "test": "ember test"
@@ -19,6 +20,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "bower": "^1.8.0",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "0.7.1",
     "ember-cli": "2.5.0",
@@ -45,6 +47,7 @@
     "ember-resolver": "^2.0.3",
     "ember-try": "0.2.2",
     "emberfire": "1.6.6",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "phantomjs-prebuilt": "^2.1.14"
   }
 }

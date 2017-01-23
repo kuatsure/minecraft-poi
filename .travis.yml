@@ -8,6 +8,7 @@ sudo: false
 cache:
   directories:
     - $HOME/.cache/yarn
+    - $HOME/.cache # includes bowers cache
 
 env:
   - EMBER_TRY_SCENARIO=default

@@ -2136,11 +2136,11 @@ ember-cli@2.10.1:
     walk-sync "^0.3.0"
     yam "0.0.22"
 
-ember-css-transitions@^0.1.0:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/ember-css-transitions/-/ember-css-transitions-0.1.9.tgz#280caa7aaf2132abbeb3c960fc64ba11cf303d81"
+ember-css-transitions@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ember-css-transitions/-/ember-css-transitions-0.1.2.tgz#987fe3ca64c759fa65d48148d7ad62bd4cc21a22"
   dependencies:
-    ember-cli-babel "^5.1.6"
+    ember-cli-babel "^5.1.5"
 
 ember-data@^2.10.0:
   version "2.11.0"
@@ -2200,13 +2200,13 @@ ember-page-title@3.1.5:
     ember-cli-head "0.1.1"
     ember-cli-htmlbars "^1.1.0"
 
-ember-paper@0.2.14:
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/ember-paper/-/ember-paper-0.2.14.tgz#da4da3d570272f171b169ad9cb2f86ee3a30b4ea"
+ember-paper@0.2.15:
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/ember-paper/-/ember-paper-0.2.15.tgz#330bed37f4819a20f02d2c41b35a9dcdc5b4c38b"
   dependencies:
     broccoli-autoprefixer "^3.0.0"
     ember-cli-babel "^5.1.5"
-    ember-css-transitions "^0.1.0"
+    ember-css-transitions "0.1.2"
     ember-wormhole "^0.3.4"
 
 ember-qunit@^2.0.0-beta.1:
@@ -2257,7 +2257,7 @@ ember-try-config@^2.0.1:
     rsvp "^3.2.1"
     semver "^5.1.0"
 
-ember-try@0.2.9, ember-try@^0.2.6:
+ember-try@^0.2.6:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/ember-try/-/ember-try-0.2.9.tgz#eb06c8512b7d62c2cac74b260538319e64144b86"
   dependencies:

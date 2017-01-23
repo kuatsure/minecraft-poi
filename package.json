@@ -13,12 +13,20 @@
     "start": "ember server",
     "test": "ember test"
   },
-  "repository": "",
   "engines": {
     "node": ">= 0.12.0"
   },
-  "author": "",
-  "license": "MIT",
+  "author": {
+    "name": "Jarrett Drouillard",
+    "email": "jarrett@thestyl.us"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kuatsure/minecraft-poi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuatsure/minecraft-poi/issues"
+  },
   "devDependencies": {
     "bower": "^1.8.0",
     "broccoli-asset-rev": "^2.4.5",

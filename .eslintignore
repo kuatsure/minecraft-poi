@@ -1,0 +1,4 @@
+tests/helpers/*.js
+tests/test-helper.js
+ember-cli-build.js
+testem.js
